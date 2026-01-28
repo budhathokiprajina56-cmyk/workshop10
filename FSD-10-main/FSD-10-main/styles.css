@@ -1,0 +1,168 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Page Layout ===== */
+body {
+    min-height: 100vh;
+    font-family: 'Inter', Arial, sans-serif;
+    background: radial-gradient(circle at top, #47a6ff, #4e659b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e7eb;
+}
+
+/* ===== Card ===== */
+.container {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 32px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Headings ===== */
+h1, h2 {
+    margin-bottom: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.container{
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+/* ===== Messages ===== */
+p {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.message {
+    background: rgba(34, 197, 94, 0.15);
+    color: #ffffff;
+}
+
+.dashboard-h1 {
+    margin-bottom: 100px;
+    font-weight: 800;
+    color: #f3f4f6;
+    letter-spacing: 1px;
+}
+
+.Dashboard-container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.error {
+    background: rgba(239, 68, 68, 0.15);
+    color: #fca5a5;
+}
+
+/* ===== Form ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Labels ===== */
+label {
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #cbd5f5;
+}
+
+/* ===== Inputs ===== */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transition: background 0.3s ease, outline 0.3s ease;
+
+}
+
+input::placeholder {
+    color: #c7d2fe;
+}
+
+input:focus {
+    outline: 2px solid #818cf8;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Buttons ===== */
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(135deg, #496ab1, #2013da);
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.4);
+}
+
+/* ===== Danger Button ===== */
+.btn-danger {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* ===== Links ===== */
+a {
+    display: block;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #a5b4fc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    .container {
+        padding: 24px;
+    }
+}
